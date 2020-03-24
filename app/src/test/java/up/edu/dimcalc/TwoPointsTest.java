@@ -91,10 +91,10 @@ public class TwoPointsTest {
     @Test
     public void slope() {
         TwoPoints testPoints = new TwoPoints();
-        testPoints.setPoint(0, 5, -3);
-        testPoints.setPoint(1, -3, 5);
+        testPoints.setPoint(0, 5, -0);
+        testPoints.setPoint(1, -3, 0);
         Point p1 = testPoints.getPoint(0);
         Point p2 = testPoints.getPoint(1);
-        assertEquals(-1, testPoints.slope(), .0001);
+        assertEquals(0, testPoints.slope(), .0001);
     }
 }
